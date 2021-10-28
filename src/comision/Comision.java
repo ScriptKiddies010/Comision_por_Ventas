@@ -37,16 +37,20 @@ import java.util.Arrays;
 
  class Comision extends JFrame implements ActionListener{
      
-  //declaramos el arreglo rangos_venta
+  //Declaramos arreglo rangos_venta
         String [] rango = new String[9];
+  //Declaramos e inicializamos los contadores
         int a=0,b=0,c=0,d=0,ee=0,f=0,g=0,h=0,ii=0;
+  
         int vta = 0,i;
-       
+  //Declaramos los objetos
     JButton btsig, btcalcular;
     JLabel lbventas;
     JTextField tfventas;
     
     public Comision(){
+        
+        //Constructor
         super("Comision");
         Container contenedor=getContentPane();
             contenedor.setLayout(new FlowLayout());
@@ -77,9 +81,10 @@ import java.util.Arrays;
         
       
      
-        
+        //Si presionamos el btsig se calcula la comision y se le agregan $200
         if(e.getSource()==btsig){
         vta=Integer.parseInt(tfventas.getText());
+        
         vta=(int)(vta*0.09F+200);
         System.out.println("Total de la venta: "+vta);
         //Borramos el campo de texto para permitir ingresar un nuevo numero
@@ -88,9 +93,12 @@ import java.util.Arrays;
        
         } //cierrra if
    
+        //
           //este if nos ayuda a comparar entre 2 cantidades
          if (vta >= 200 && vta <= 299){
+             //incrementamos el contador
             a=a+1;
+            //asignamos valores al arreglo
             rango[0]= "a) 200 - 299 : "+a+"\n";
              System.out.println(rango[0]);
         }
@@ -147,8 +155,9 @@ import java.util.Arrays;
         
     } //cierra actionPreformed
     
+    //Metodo main
     public static void main(String[] args) {
         Comision g=new Comision();
     }
     
-}
+}//Termina class Comision
