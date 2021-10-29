@@ -9,7 +9,7 @@ Los vendedores reciben 200$ por semana mas el 9% de sus ventas totales de esta s
 Por ejemplo un vendedor que acumule,5000$ en ventas en una semana recibira 200$ mas el 9% de 5000$, 
 a un total de 650$. 
 
-Escriba una app (Utilizar un arreglo de contadores) que determine cuantos venderodres recibieron el 
+Escriba una app (Utilizar un arreglo de contadores) que determine cuantos vendedores  recibieron el 
 salario en cada uno de los siguientes rangos.
 
 
